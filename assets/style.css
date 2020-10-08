@@ -1,0 +1,45 @@
+.quiz {
+    background-color: purple;
+    border-color: yellow;
+    color: white;
+}
+
+a {
+    cursor: pointer;
+}
+
+#yellow {
+    color: yellow;
+}
+
+.hero, .questCont {
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.hero img {
+    max-width: 80%;
+}
+
+#timerBtn, #question-result {
+    display: none;
+}
+
+li {
+    line-height: 2;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+#timer, #question-result {
+    margin: 0rem .5rem;
+}
+
+.alert {
+    padding: 2rem;
+    line-height: 3;
+}

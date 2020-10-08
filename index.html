@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz: Get a High Score!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark quiz">
+      <a id="yellow" class="navbar-brand" href="index.html">javaScriptQuiz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="homeLink" class="nav-link active" href="index.html">takeQuiz()<span class="sr-only">(current)</span></a>
+        </div>
+        <div class="navbar-nav">
+          <a id="menuLink" class="nav-link active">viewHighScores()<span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="container hero">
+      <h1>welcome to the javaScript Quiz</h1>
+      <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
+      <img src="assets/7560.jpg" alt="quiz show">
+      <br>
+      <button id="startQuiz" type="button" class="btn btn-warning">startQuiz()</button>
+    </div>
+    <div id="dflex" class="d-flex justify-content-center">
+
+    <div id="quizCont" class="container">
+      <div class="row justify-content-center m-5">
+        <button id="timerBtn" type="button" class="btn btn-warning btn-lg">
+          Time Left:<span id="timer"> </span>
+        </button>
+      </div>
+      <div class="row justify-content-center">
+        <div id="card">
+
+          <h4 id="question"></h4>
+    
+          <div id="cardHead">
+            <ol id="option-list"></ol>
+          </div>
+    
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="m-2 btn">
+          <h5 id="question-result" class="alert-heading"></h5>
+        </div>    
+      </div>
+
+    </div>
+  </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
