@@ -111,8 +111,11 @@ function showHighScore() {
    } else {
      high_scores = JSON.parse(high_scores);
    }
- 
-   high_scores.push({ name: userName, score: correctCount });
+   
+   if (userName.length != 0) {
+    high_scores.push({ name: userName, score: correctCount });
+   }
+   
  
    localStorage.setItem("scores", JSON.stringify(high_scores));
 
